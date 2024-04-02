@@ -1,0 +1,35 @@
+<p id="demo"></p>
+<p id="demoo"></p>
+<p id="demooo"></p>
+<script>
+//Method 1
+courses=["Graphic", "Auto Cad", "Web Designing", "3D Max"]
+document.write(courses + "<br>");
+
+
+
+
+//Method 2
+info=[
+	"laptop",
+	"cpu",
+	"LCD"
+	]
+document.write(info + "<br>");
+//show only 1 amount in 1 variabel
+//document.write(info[0])
+
+
+
+var names = new Array("ali","Majid Ali","nazim","Noman")
+//document.write(names);
+document.write(names[0]);
+document.getElementById("demo").innerHTML=names[1];
+
+
+
+person={firstname:"Majid", lastname:"ali", age:25};
+document.getElementById("demoo").innerHTML=person["lastname"];
+fruits=["Apple", "Orange", "Mango", "Banana"];
+document.getElementById("demooo").innerHTML=fruits.length;
+</script>

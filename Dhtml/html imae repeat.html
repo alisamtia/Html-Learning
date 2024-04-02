@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>images</title>
+<script>
+c=0;
+function autogallery()
+{
+	if(c==1)
+	{
+	document.getElementById("gallery").src="ali/image1.jpg";
+	
+	}
+	if(c==2)
+	{
+	document.getElementById("gallery").src="ali/image2.jpg";
+	
+	}
+	
+	if(c==3)
+	{
+	document.getElementById("gallery").src="ali/image3.jpg";
+	
+	}
+	if(c==4)
+	{
+	document.getElementById("gallery").src="ali/image4.jpeg";
+	
+	}
+	if(c==5)
+	{
+	document.getElementById("gallery").src="ali/image5.jpg";
+	
+	}
+	if(c==6)
+	{
+	document.getElementById("gallery").src="ali/image6.jpg";
+	
+	}
+	if(c==7)
+	{
+	document.getElementById("gallery").src="ali/image7.jpg";
+	
+	}
+	if(c==8)
+	{
+	document.getElementById("gallery").src="ali/image8.jpg";
+	
+	}
+	if(c==9)
+	{
+	document.getElementById("gallery").src="ali/image01.jpg";
+	
+	}
+c++;
+setTimeout("autogallery()",1000);
+if(c>8)
+{
+c=0;
+}
+}
+</script>
+</head>
+<body onload="autogallery()">
+<img src="ali/image01.jpg" width="300" height="200" id="gallery">
+</body>
+</html>

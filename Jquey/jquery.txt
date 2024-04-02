@@ -1,0 +1,29 @@
+		
+	Jquery Language
+
+	User Intrectivity
+
+	Created 2006
+
+jquery is a light wighted , open sorce libary
+
+html, css , javascqript
+
+jquery -->Jquery libray
+
+how many method method use for Jquey??
+
+only two methods
+
+1. CDN
+2. Direct Download
+
+CDN Stand For?
+Content Delevery Netword
+
+
+
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>

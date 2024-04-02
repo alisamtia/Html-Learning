@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Result card</title>
+<script>
+rollno=4343;
+name="Noman";
+english=60;
+urdu=40;
+computer=55;
+total=300;
+ob=english+urdu+computer;
+per=ob*100/total;
+avg=ob/3;
+//position
+if(per>90)
+{
+result="First";
+}
+else if(per>80)
+{
+result="Second";
+}
+else if(per>70)
+{
+result="Third";
+}
+else if(per>40)
+{
+result="pass";
+}
+else
+{
+result="Fail";
+}
+
+//Grade
+if(per>95)
+{
+grade="A+";
+}
+else if(per>=95)
+{
+grade="A+";
+}
+else if(per>=90)
+{
+grade="A";
+}
+else if(per>85)
+{
+grade="B+";
+}
+else if(per>80)
+{
+grade="B";
+}
+else if(per>70)
+{
+grade="C+";
+}
+else if(per>60)
+{
+grade="C";
+}
+else if(per>40)
+{
+grade="D";
+}
+else
+{
+grade="Fail";
+}
+
+</script>
+</head>
+<body>
+<h1 align="center"><font color="#FF0000">Result Card</font></h1>
+<table border="1" align="center" width="300">
+<tr>
+<td width="150">Roll No</td>
+<td>
+<script>
+document.write(rollno);
+</script>
+</td>
+</tr>
+
+<tr>
+<td width="150">Name</td>
+<td>
+<script>
+document.write(name);
+</script>
+</td>
+</tr>
+
+<tr>
+<td width="150">English</td>
+<td>
+<script>
+document.write(english);
+</script>
+</td>
+</tr>
+
+<tr>
+<td width="150">Urdu</td>
+<td>
+<script>
+document.write(urdu);
+</script>
+</td>
+</tr>
+
+<tr>
+<td width="150">Computer</td>
+<td>
+<script>
+document.write(computer);
+</script>
+</td>
+</tr>
+
+<tr>
+<td width="150">Total Marks</td>
+<td>
+<script>
+document.write(total);
+</script>
+</td>
+</tr>
+
+<tr>
+<td width="150">Obtained Marks</td>
+<td>
+<script>
+document.write(ob);
+</script>
+</td>
+</tr>
+
+<tr>
+<td width="150">Percantage</td>
+<td>
+<script>
+document.write(per);
+</script>
+</td>
+</tr>
+
+<tr>
+<td width="150">Average</td>
+<td>
+<script>
+document.write(avg);
+</script>
+</td>
+</tr>
+
+<tr>
+<td width="150">Pass/Fail</td>
+<td>
+<script>
+document.write(result);
+</script>
+</td>
+</tr>
+<tr>
+<td width="150">Grade</td>
+<td>
+<script>
+document.write(grade);
+</script>
+</td>
+</tr>
+
+
+</table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="test.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+xyz=$("#abc");
+
+		xyz.animate({height: '300px',opacity: '0.4'}, 4000);
+		xyz.animate({width: '300px',opacity: '0.8'}, "slow");
+		xyz.animate({height: '100px',opacity: '0.4'}, "slow");
+		xyz.animate({width: '100px',opacity: '0.8'}, "slow");
+});
+							})
+</script>
+</head>
+<body>
+<button>Animation Start</button>
+<br /><br />
+<div style="background:#98bf21; width:100px; height:100px; position:absolute;" id="abc"></div>
+</body>
+</html>

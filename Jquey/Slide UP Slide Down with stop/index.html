@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="test.js"></script>
+
+<script>
+$(document).ready(function(){
+
+					$('#slideup').click(function(){
+									$('#ali').slideUp(5000,function(){
+									alert('Your image Has Been Slide up')
+																	})
+
+												})
+							
+							
+							
+					$('#slidedown').click(function(){
+									$('#ali').slideDown('fast')
+
+												})
+										
+							
+							
+					$('#slidetoggle').click(function(){
+									$('#ali').stop().slideToggle(2000)
+
+												})
+							
+
+					$('#stop').click(function(){
+									$('#ali').stop()(1000)
+
+												})							
+							
+							})
+</script>
+
+<style>
+.a
+{
+width:99%;
+height:335px;
+background-color:#000000;
+position:absolute;
+}
+#b
+{
+border:3px;
+}
+</style>
+
+</head>
+
+<body>
+<div class="a" id="ali">
+</div>
+<br />
+<h1 align="center">Welcome to photo Gallery</h1>
+
+<center>
+<img src="images/1.jpg" width="270" height="200" id="img" border="10">
+<img src="images/2.jpg" width="270" height="200" id="img" border="10">
+<img src="images/3.jpg" width="270" height="200" id="img" border="10">
+<img src="images/4.jpg" width="270" height="200" id="img" border="10">
+<br />
+<br />
+<button id="slideup">Slide Up</button>
+<button id="slidedown">Slide Down</button>
+<button id="slidetoggle">Slide Up / Slide Down</button>
+<button id="stop">Stop</button>
+</center>
+</body>
+</html>

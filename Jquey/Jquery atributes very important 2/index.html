@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="test.js"></script>
+
+<script>
+//not apply css properties div1title
+/*
+$(document).ready(function(){
+$('div[title!="div1title"]').css('border','10px solid orange')
+							})
+*/
+
+//2d method
+/*
+$(document).ready(function(){
+$('div:not([title="div1title"])').css('border','10px solid orange')
+							})
+*/
+
+//show all atribute with value of must title
+/*
+$(document).ready(function(){
+$('[title*="title"]').css('border','10px solid orange')
+							})
+*/							
+							
+//title value with space woring with out space not working	
+/*						
+$(document).ready(function(){
+$('[title~="title"]').css('border','10px solid orange')
+							})
+*/
+
+//woring with only title-a 
+/*
+$(document).ready(function(){
+$('[title|="title"]').css('border','10px solid orange')
+							})
+*/
+
+//this code just select title attribute with start all div
+/*
+$(document).ready(function(){
+$('[title^="div"]').css('border','10px solid orange')
+							})
+*/
+
+//Dollar sign $
+//title-a not woring
+//a-title woring
+//a-title-p not woring
+//a-b-c-title woring
+//a-b-c-title-d not woring
+
+//select all like condition above
+$(document).ready(function(){
+$('[title$="div"]').css('border','10px solid orange')
+							})
+</script>
+
+</head>
+<body>
+
+<div title="div1title" style="border:1px solid red;">
+Div 1
+</div>
+
+<div title="atitlediv2a">
+Div 2
+</div>
+
+<br />
+
+<p title="a-b-c-title">
+This is a Paragraph
+</p>
+
+<span title="a-title">
+Span 1
+</span>
+
+<br /><br />
+
+<span style="background-color:red;">
+Span 2
+</span>
+
+</body>
+</html>

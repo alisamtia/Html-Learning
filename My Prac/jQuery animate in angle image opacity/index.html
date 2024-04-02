@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="test.js"></script>
+<script>
+var t = -1.6;
+var t2 = -1.6;
+var x = 0;
+var t = [-1.6, -1.6, -1.6], // starting angle in radians for each circle
+
+    delta = [0.05, 0.03, 0.02], // change in radians for each circle
+                                // e.g the first moves fastest, the last 
+                                // slowest. if this gets too big, the 
+                                // movement won't look circular, since the
+                                // animation is really a bunch of straight lines
+
+    finish = [1.4, 1.0, 0.6];   // the stopping point in radians for each
+                                // circle. if the circle size changes, this
+                                // may need to change
+
+function moveit(i) {
+    t[i] += delta[i];    // move the angle forward by delta
+    var r = 300;         // radius (the .inner div is 600 x 600)
+    var xcenter = -30;   // center X position: this reproduces the .inner horizontal
+                                // center but from the body element
+    var ycenter = 420;   // center Y position: same here but vertical
+
+    // Basic trig, these use sin/cos to find the vert and horiz offset for a given
+    // angle from the center (t[i]) and a given radius (r)
+    var newLeft = Math.floor(xcenter + (r * Math.cos(t[i])));
+    var newTop = Math.floor(ycenter + (r * Math.sin(t[i])));
+
+    // Now animate to the new top and left, over 1ms, and when complete call
+    // the move function again if t[i] hasn't reached the finish.
+    $('div.circle'+(i+1)).animate({
+        top: newTop,
+        left: newLeft,
+    },1, function() {
+      if (t[i] < finish[i]) moveit(i);
+    });
+    // You can slow down the animation by increasing the 1, but that will eventually
+    // make it choppy. This plays opposite the delta.
+}
+
+// Start the ball rolling
+$("document").ready(function(e) {
+  moveit(0);
+  moveit(1);
+  moveit(2);
+});
+</script>
+</head>
+<body>
+<button>Start Animation</button>
+<br />
+<div>
+<img src="images/1.jpg" width="400" height="400" style="position:absolute;">
+</div>
+</body>
+</html>

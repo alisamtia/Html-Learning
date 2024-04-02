@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+x=21;
+function abc()
+{
+x--
+setTimeout("abc()",1000);
+if(x==0)
+{
+--x;
+document.write("<h1 align='center'><a href='ali/1.jpg' download='ali/1.jpg' id='new'>Download File</a><h1>");
+}
+}
+</script>
+</head>
+<body onload="abc()">
+<br><br>
+<h1 style="font-size:70px" align="center">File is Downloading.....</h1>
+<center><img src="ali/a.gif"></center>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<script src="test.js"></script>
+<script>
+$(document).ready(function(){
+/*
+				$('#btn').(function(){
+				$('#img').css({'transform':'scale(.5,.5)','transition':'1s ease'});
+										});
+
+
+
+click,mouseup,mousedown
+dblclick
+mouseover,mouseenter
+mouseout,mouseleave
+*/
+
+/*
+focus,blur
+*/
+
+				$('input').focus(function(){
+				$(this).css("background-color","skyblue");	
+										});
+
+
+				$('input').blur(function(){
+				$(this).css({'background':'green'});	
+										});
+
+							});
+</script>
+<body>
+<center>
+<img src="images/1.jpg" width="400" height="400" id="img">
+<button id="btn">Click Me</button>
+<br />
+First Name:<input><br /><br />
+Last Name:<input />
+</center>
+</body>
+</html>

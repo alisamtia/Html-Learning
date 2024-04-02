@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Untitled Document</title>
+<script>
+x=0;
+function next()
+{
+	switch(x)
+	{
+	case 0:
+	x++;
+	document.getElementById("gallery").src="ali/image1.jpg";
+	break;
+	case 1:
+	x++;
+	document.getElementById("gallery").src="ali/image2.jpg";
+	break;
+	case 2:
+	x++;
+	document.getElementById("gallery").src="ali/image3.jpg";
+	}
+}
+function bac()
+{
+	switch(x)
+	{
+	case 3:
+	x--
+	document.getElementById("gallery").src="ali/image2.jpg";
+	break;
+	case 2:
+	x--
+	document.getElementById("gallery").src="ali/image1.jpg";
+	break;
+	case 1:
+	x--;
+	document.getElementById("gallery").src="ali/image01.jpg";
+	}
+}
+</script>
+</head>
+<body>
+<center><img src="ali/image01.jpg" height="350" width="400" id="gallery" border="5">
+<br>
+<input type="button" value="Back" onClick="bac()">
+<input type="button" value="Next" onClick="next()">
+</center>
+
+</body>
+</html>

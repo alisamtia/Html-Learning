@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="test.js"></script>
+
+<script>
+$(document).ready(function(){
+
+				$('#fadeout').click(function(){
+				$(img).fadeOut('slow',function(){
+				alert('image Has Been Fade Out')
+				})
+
+
+											})
+			
+							
+							
+							
+				$('#fadein').click(function(){
+				$(img).fadeIn('fast')
+
+
+											})
+
+
+
+
+
+
+
+
+
+
+				$('#toggle').click(function(){
+				$(img).fadeToggle(5000)
+
+
+											})
+							
+							})
+</script>
+</head>
+<body>
+
+
+
+<center>
+<img src="images/1.jpg" height="400" width="400" id="img"><br />
+<button id="fadeout">Fade Out</button>
+<button id="fadein">Fade In</button>
+<button id="toggle">Fade Out / Fade In</button>
+</center>
+
+
+
+</body>
+</html>

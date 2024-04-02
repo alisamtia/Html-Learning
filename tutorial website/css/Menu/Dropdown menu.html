@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+<head>
+
+<title>Untitled Document</title>
+</head>
+<style>
+
+ul#menu, ul#menu ul.sub-menu
+{
+padding:0px;
+margin:0px;
+margin-top:11px;	}
+ul#menu li,ul.sub-menu li
+{
+list-style-type:none;
+float:left;
+	}
+ul#menu li a,ul.sub-menu li a
+{
+text-decoration:none;
+color:green;
+background:brown;
+width:150px;
+height:40px;
+display:inline-block;
+border-radius:20px;
+text-align:center;
+line-height:40px;	
+	}
+ul#menu li a:hover,ul.sub-menu li a:hover	
+{
+text-decoration:none;
+color:green;
+background:black;
+width:150px;
+height:40px;
+display:inline-block;
+border-radius:20px;
+text-align:center;
+line-height:40px;	
+	
+	}	
+		
+ul#menu li
+{
+position:relative;	}	
+ul#menu li ul.sub-menu
+{
+display:none;
+position:absolute;
+top:30px;
+left:0px;
+width:100px;	
+	}
+ul#menu li:hover ul.sub-menu
+{
+display:block;
+	}
+a:hover
+{
+background-color:red;
+	}	
+</style>
+<body>
+<ul id="menu">
+<li> <a href="#">menu 1 </a></li>
+<li><a href="#">menu 2</a>
+<ul class="sub-menu">
+<li> <a href="#">menu 1 </a></li>
+<li> <a href="#">menu 1 </a></li>
+<li> <a href="#">menu 1 </a></li>
+<li> <a href="#">menu 1 </a></li>
+<li> <a href="#">menu 1 </a></li>
+</ul>
+</li>
+<li> <a href="#">menu 1 </a></li>
+<li><a href="#">menu 2</a>
+<ul class="sub-menu">
+<li> <a href="#">menu 1 </a></li>
+<li> <a href="#">menu 1 </a></li>
+<li> <a href="#">menu 1 </a></li>
+<li> <a href="#">menu 1 </a></li>
+<li> <a href="#">menu 1 </a></li>
+</ul>
+</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Get-AppxPackage *OneNote* | Remove-AppxPackage
+
+netsh interface tcp show global
+
+if  Recive Window Auto-Tuning level is : normal
+
+netsh int tcp set global autotuninglevel=disabled

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 20s;
+}
+
+@keyframes example {
+  0%   {background-color: IndianRed;}
+  2%  {background-color: yellow;}
+  5%  {background-color: blue;}
+  10% {background-color: green;}
+    12%   {background-color: skyblue;}
+  14%  {background-color: DeepPink;}
+  15%  {background-color: MediumVioletRed;}
+  18% {background-color: skyblue;}
+  22%  {background-color: 	OrangeRed;}
+  27%  {background-color: DarkOrange;}
+  30% {background-color: green;}
+  33%   {background-color: skyblue;}
+  37%  {background-color: Orange;}
+  40%  {background-color: Gold;}
+  48% {background-color: PeachPuff;}
+  52%   {background-color: Magenta;}
+  57%  {background-color: MediumOrchid;}
+  60%  {background-color: BlueViolet;}
+  64% {background-color: Purple;}
+  67%   {background-color: SlateBlue;}
+  70%  {background-color: DarkSlateBlue;}
+  75%  {background-color: GreenYellow;}
+  83% {background-color: LawnGreen;}
+  85%  {background-color: Lime;}
+  89% {background-color: SpringGreen;}
+  90%   {background-color: ForestGreen;}
+  91%  {background-color: LightSeaGreen;}
+  92%  {background-color: Cyan;}
+  93% {background-color: Aquamarine;}
+  94%   {background-color: MediumBlue;}
+  95%  {background-color: FireBrick;}
+  98%  {background-color: LightCoral;}
+  100% {background-color: Tomato;}
+}
+</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
+

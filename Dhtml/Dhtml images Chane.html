@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+function java()
+{
+document.getElementById("gallery").src="ali/image01.jpg";
+}
+function image1()
+{
+document.getElementById("gallery").src="ali/image2.jpg";
+}
+function image2()
+{
+document.getElementById("gallery").src="ali/image3.jpg";
+}
+function image3()
+{
+document.getElementById("gallery").src="ali/image4.jpeg";
+}
+function image4()
+{
+document.getElementById("gallery").src="ali/image5.jpg";
+}
+</script>
+</head>
+<body>
+<table align="center" width="520">
+<tr>
+<td align="center"><input type="button" value="image 1" onclick="java()"></td>
+<td align="center"><input type="button" value="image 2" onclick="image1()"></td>
+<td align="center"><input type="button" value="image 3" onclick="image2()"></td>
+<td align="center"><input type="button" value="image 4" onclick="image3()"></td>
+<td align="center"><input type="button" value="image 5" onclick="image4()"></td>
+</tr>
+</table>
+
+<table border="15" bordercolor="#00FFFF" align="center" width="445" height="335">
+<tr>
+<td align="center"><img src="ali/image1.jpg" width="445" height="335" id="gallery"></td>
+
+</tr>
+</table>
+</body>
+</html>

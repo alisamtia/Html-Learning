@@ -1,0 +1,9 @@
+$(document).ready(
+function()
+{
+$('h1,h2').show('slow');
+//medium
+//fast
+//slow
+}
+)

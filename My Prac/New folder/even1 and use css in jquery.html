@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+function abc()
+{
+document.getElementById("a").src="1.jpg";
+document.getElementById("a").src="2.jpg";
+setTimeout("abc()",2000)
+}
+</script>
+<script src="test.js"></script>
+<script>
+$(document).ready(function(){
+
+$('img').load(function(){
+$(this).css({'transform':'scale(2,2)','transition':'1s'});
+$('img').hide(1000);
+$('img').show(1000);
+$('img').attr("src", "images/2.jpg");
+$('img').attr("src", "images/1.jpg");
+					})
+					
+					
+$('img').load(function(){
+$(this).css({'transform':'scale(1,1)','transition':'1s'});
+$('img').hide(1000);
+$('img').show(1000);
+$('img').attr("src", "images/1.jpg");
+					})
+						   })
+/*
+event name
+1. mouseover
+2. mouseout
+3. click
+*/
+</script>
+</head>
+<body onunload="abc()">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<img src="images/1.jpg" height="200" width="200" border="5" id="a" onclick="ali()">
+</center>
+</body>
+</html>

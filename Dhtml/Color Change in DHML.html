@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+function abc1()
+{
+document.getElementById("change").color="orange";
+}
+function abc2()
+{
+document.getElementById("change").color="green";
+}
+function abc3()
+{
+document.getElementById("change").color="red";
+}
+function abc4()
+{
+document.getElementById("change").color="yellow";
+}
+</script>
+</head>
+<body onload="abc1()">
+<input type="button" value="Orange" onclick="abc1()">
+<button ondblclick="abc2()">Green Color</button>
+<button onmouseover="abc3()">Red Color</button>
+<button onmouseout="abc4()">Orange Color</button>
+<br />
+<font id="change">Welcome To Java Script</font>
+</body>
+</html>

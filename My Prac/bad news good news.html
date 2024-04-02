@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+c=1;
+function ali()
+{
+if(c==1)
+{
+document.getElementById("text").innerHTML="Today Just cause 2 is ban in Pakistan";
+}
+if(c==2)
+{
+document.getElementById("text").innerHTML="Today Skype is ban in Pakistan";
+}
+if(c==3)
+{
+document.getElementById("text").innerHTML="Today Pubg is ban in Pakistan";
+}
+if(c==4)
+{
+document.getElementById("text").innerHTML="Today instagram is ban in Pakistan";
+}
+if(c==5)
+{
+document.getElementById("text").innerHTML="Today Twitter is ban in Pakistan";
+}
+if(c==6)
+{
+document.getElementById("text").innerHTML="Today Faceook is ban in Pakistan";
+}
+if(c==7)
+{
+document.getElementById("text").innerHTML="Tody Tik Tok is ban in pakistan";
+}
+c++;
+setTimeout("ali()",5000)
+if(c>=10)
+{
+c=1;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+x=1;
+function abc()
+{
+if(x==1)
+{
+document.getElementById("text").innerHTML="Today Just cause 2 is open in Pakistan";
+}
+if(x==2)
+{
+document.getElementById("text").innerHTML="Today Skype is open in Pakistan";
+}
+if(x==3)
+{
+document.getElementById("text").innerHTML="Today Pubg is open in Pakistan";
+}
+if(x==4)
+{
+document.getElementById("text").innerHTML="Today instagram is open in Pakistan";
+}
+if(x==5)
+{
+document.getElementById("text").innerHTML="Today Twitter is open in Pakistan";
+}
+if(x==6)
+{
+document.getElementById("text").innerHTML="Today Faceook is open in Pakistan";
+}
+if(x==7)
+{
+document.getElementById("text").innerHTML="Tody Tik Tok is open in pakistan";
+}
+x++;
+setTimeout("abc()",5000)
+if(x>=10)
+{
+c=1;
+}
+}
+</script>
+
+
+<style>
+#button
+{
+background-color:#00FF00;
+border:none;
+width:150px;
+height:40px;
+border:0px soid blue;
+border-radius:10px 10px 10px 10px;
+color:#0099FF;
+}
+#button:hover
+{
+background-color:#0099FF;
+border:none;
+width:150px;
+height:40px;
+border:0px soid blue;
+border-radius:10px 10px 10px 10px;
+color:#00FF00;
+}
+</style>
+</head>
+<body>
+<table border="1" align="center" width="700">
+<tr>
+<td align="center">
+<button onclick="abc()" id="button">Good News</button>
+</td>
+<td align="center">
+<button onclick="ali()" id="button">Bad News</button>
+</td>
+</tr>
+<tr height="70">
+<td colspan="2">
+<marquee scrollamount="10" onmouseover="stop()" onmouseout="start()"><b id="text"></b></marquee>
+</td>
+</tr>
+</table>
+</body>
+</html>

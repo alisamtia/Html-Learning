@@ -1,0 +1,7 @@
+Setcookie(name,contant,expiry,domain,security)
+
+name=ali;
+contant=myweb;
+expiry=;
+
+Setcookie(name,contant,expiry)

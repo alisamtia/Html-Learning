@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="test.js"></script>
+
+<script>
+//All Title atribute
+/*
+$(document).ready(function(){
+$('[title]').css('border','5px solid red');
+
+							});
+*/
+
+
+
+//only tags title
+//only div title
+/*
+$(document).ready(function(){
+$('div[title]').css('border','5px solid red');
+
+							});
+*/
+
+
+
+//only Tag with value
+//only div with value
+/*
+$(document).ready(function(){
+$('div[title="div1title"]').css('border','5px solid red');
+
+							});
+*/
+
+
+//same atribute
+/*
+$(document).ready(function(){
+$('[title="div1title"]').css('border','5px solid red');
+
+							});
+*/
+
+//Programing rules
+/*
+$(document).ready(function(){
+$("[title='div1title']").css('border','5px solid red');
+
+							});
+*/
+
+//use double quot without single quot
+/*
+$(document).ready(function(){
+$("[title=\"div1title\"]").css('border','5px solid red');
+
+							});
+*/
+
+
+//use single quot without double quot
+/*
+$(document).ready(function(){
+$('[title=\'div1title\']').css('border','5px solid red');
+							});
+*/
+
+//Title with style atribute
+/*
+$(document).ready(function(){
+$('[title=div1title][style]').css('border','5px solid red');
+							});
+*/
+
+//use or condition
+/*
+$(document).ready(function(){
+$('[title=div1title],[style]').css('border','5px solid red');
+							});
+*/
+
+//or condition with same atribute and value
+$(document).ready(function(){
+$('[title="div1title"],[style="background-color:red"]').css('border','5px solid blue');
+							});
+</script>
+
+</head>
+<body>
+
+<div title="div1title" style="">
+Div 1
+</div>
+
+<br />
+
+<div title="div2title">
+Div 2
+</div>
+
+<p title="ptitle">
+This is a Paragraph
+</p>
+
+<span title="div1title">
+Span 1
+</span>
+<br /><br />
+<span style="">
+Span 2
+</span>
+
+</body>
+</html>

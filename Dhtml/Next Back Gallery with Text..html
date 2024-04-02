@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Untitled Document</title>
+<script>
+x=0;
+function next()
+{
+	switch(x)
+	{
+	case 0:
+	x++;
+	document.getElementById("gallery").src="ali/image1.jpg";
+	document.getElementById("text").innerHTML="Picture 2";
+	break;
+	case 1:
+	x++;
+	document.getElementById("gallery").src="ali/image2.jpg";
+	document.getElementById("text").innerHTML="Picture 3";
+	break;
+	case 2:
+	x++;
+	document.getElementById("gallery").src="ali/image3.jpg";
+	document.getElementById("text").innerHTML="Picture 4";
+	}
+}
+function bac()
+{
+	switch(x)
+	{
+	case 3:
+	x--
+	document.getElementById("gallery").src="ali/image2.jpg";
+	document.getElementById("text").innerHTML="Picture 3";
+	break;
+	case 2:
+	x--
+	document.getElementById("gallery").src="ali/image1.jpg";
+	document.getElementById("text").innerHTML="Picture 2";
+	break;
+	case 1:
+	x--;
+	document.getElementById("gallery").src="ali/image01.jpg";
+	document.getElementById("text").innerHTML="Picture 1";
+	}
+}
+</script>
+</head>
+<body>
+<table align="center" border="2">
+<tr>
+<td><img src="ali/image01.jpg" height="250" width="300" id="gallery"></td>
+</tr>
+<tr>
+<td align="center">
+<font style="font-size:20px" id="text">Picture 1</font>
+</td>
+</tr>
+<tr>
+<td align="left" border="1" style="padding-left:100px"><input type="button" value="Back" onClick="bac()">
+<input type="button" value="Next" onClick="next()"></td>
+</tr>
+</table>
+
+</body>
+</html>
